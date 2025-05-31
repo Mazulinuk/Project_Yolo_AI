@@ -1,0 +1,15 @@
+@startuml classes_MyProjectName
+set namespaceSeparator none
+class "ObjectDetectionApp" as Project.main.ObjectDetectionApp {
+  app
+  overlay
+  running : bool
+  capture_and_detect()
+  run()
+}
+class "OverlayWindow" as Project.overlay_window.OverlayWindow {
+  objects : list
+  paintEvent(event)
+  update_objects(objects)
+}
+@enduml

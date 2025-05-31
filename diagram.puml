@@ -1,0 +1,6 @@
+@startuml
+class Test {
+  +String name
+  +void hello()
+}
+@enduml

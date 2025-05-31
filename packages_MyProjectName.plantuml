@@ -1,0 +1,25 @@
+@startuml packages_MyProjectName
+set namespaceSeparator none
+package "Project" as Project {
+}
+package "Project.GPU_t" as Project.GPU_t {
+}
+package "Project.cuda_t" as Project.cuda_t {
+}
+package "Project.fix_labels" as Project.fix_labels {
+}
+package "Project.main" as Project.main {
+}
+package "Project.object_detection" as Project.object_detection {
+}
+package "Project.overlay_window" as Project.overlay_window {
+}
+package "Project.train" as Project.train {
+}
+package "Project.train_model" as Project.train_model {
+}
+package "Project.train_model_1" as Project.train_model_1 {
+}
+Project.main --> Project.object_detection
+Project.main --> Project.overlay_window
+@enduml
